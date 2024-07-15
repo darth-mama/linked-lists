@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="chrome-extension://fgddmllnllkalaagkghckoinaemmogpe/scripts/content/gps.js"></script>
+    
+    <title>Arrays/Linked Lists Exercises</title>
+
+    <link rel="stylesheet" href="./Arrays_Linked Lists Exercises_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./Arrays_Linked Lists Exercises_files/handouts-sphinx.css">
+
+    
+    <link href="./Arrays_Linked Lists Exercises_files/css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="page-sidebar">
+        <header>
+            <p class="project">Springboard</p>
+
+            <p class="title">Arrays/Linked Lists Exercises</p>
+
+            <p class="backlink"><a href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html"> « Back to Homepage</a></p>
+
+        </header>
+        <div id="toc">
+            <ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#">Arrays/Linked Lists Exercises</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#average-of-list">Average Of List</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#further-study">Further Study</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#doubly-linked-lists">Doubly Linked Lists</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#reverse-in-place">Reverse In Place</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#sort-sorted-linked-lists">Sort Sorted Linked Lists</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#pivot-around-value">Pivot Around Value</a></li>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#circular-arrays">Circular Arrays</a><ul>
+<li><a class="reference internal" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/index.html#solution">Solution</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    <div id="page-content">
+        
+  <div class="section" id="arrays-linked-lists-exercises">
+<h1>Arrays/Linked Lists Exercises</h1>
+<p><a class="reference external" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists.zip">Download our starter code</a>.</p>
+<p>We’ve supplied you with a <cite>Node</cite> class and a constructor for the <cite>LinkedList</cite>
+class. Here are descriptions of the methods you should write for instances of
+<cite>LinkedList</cite>:</p>
+<dl class="docutils">
+<dt><cite>push(val)</cite></dt><dd>Appends a new node with value <cite>val</cite> to the tail. Returns undefined.</dd>
+<dt><cite>unshift(val)</cite></dt><dd>Add a new node with value <cite>val</cite> to the head. Returns undefined.</dd>
+<dt><cite>pop()</cite></dt><dd>Remove &amp; return tail value. Throws error if list is empty.</dd>
+<dt><cite>shift()</cite></dt><dd>Remove &amp; return head value. Throws error if list is empty.</dd>
+<dt><cite>getAt(idx)</cite></dt><dd>Retrieve value at index position <cite>idx</cite>. Throws error if index is
+invalid.</dd>
+<dt><cite>setAt(idx, val)</cite></dt><dd>Set value of node at index position <cite>idx</cite> to <cite>val</cite>. Throws error if index is
+invalid.</dd>
+<dt><cite>insertAt(idx, val)</cite></dt><dd>Insert a new node at position <cite>idx</cite> with value <cite>val</cite>. Throws error if index is
+invalid. Returns undefined.</dd>
+<dt><cite>removeAt(idx)</cite></dt><dd>Remove &amp; return value at position <cite>idx</cite>. Throws error if index is
+invalid.</dd>
+</dl>
+<div class="admonition warning">
+<p>Go Slow &amp; Check Your Code!</p>
+<p class="last">It’s very easy to make methods that don’t work for every case —
+make sure you properly handle cases of items being at the start,
+middle, or end of the list, as well as handling empty lists.</p>
+</div>
+<div class="section" id="average-of-list">
+<h2>Average Of List</h2>
+<p>Given a linked list containing numbers, return the average of those
+numbers.</p>
+<p>For example:</p>
+<div class="graphviz">
+<img src="./Arrays_Linked Lists Exercises_files/graphviz-b1603be0d98e203f053c14824a21a615be7b422f.svg">
+</div>
+<p>would return 4.142857142857143.</p>
+<div class="section" id="further-study">
+<h3>Further Study</h3>
+</div>
+</div>
+<div class="section" id="doubly-linked-lists">
+<h2>Doubly Linked Lists</h2>
+<p>Doubly Linked Lists are just like Singly Linked Lists, but each node has a
+pointer to the previous node as well as the next one. Implement a class for
+<cite>DoublyLinkedList</cite> with the same methods as above (be mindful of opportunities
+to speed up your code now that each node has two pointers!)</p>
+</div>
+<div class="section" id="reverse-in-place">
+<h2>Reverse In Place</h2>
+<p>Write a function that reverses a linked list <em>in place</em> — not by creating
+a new list or new nodes.</p>
+</div>
+<div class="section" id="sort-sorted-linked-lists">
+<h2>Sort Sorted Linked Lists</h2>
+<p>Write a function that is passed two linked lists, <cite>a</cite> and <cite>b</cite>, both of which
+are already sorted.</p>
+<p>It should return a <em>new</em> linked list, in sorted order.</p>
+</div>
+<div class="section" id="pivot-around-value">
+<h2>Pivot Around Value</h2>
+<p>Imagine we have a singly-linked linked list:</p>
+<div class="graphviz">
+<img src="./Arrays_Linked Lists Exercises_files/graphviz-5680d1bef0f4b7595bbae8d68b16af4f2b3bad76.svg">
+</div>
+<p>In this challenge, you’ll be given a value and you want to rearrange
+the items in the linked list so that all items with data less than the
+given value are in the first half, and items with greater than or equal
+to the given value are in the second half.</p>
+<p>For example, for the value 5:</p>
+<div class="graphviz">
+<img src="./Arrays_Linked Lists Exercises_files/graphviz-28668fece2f7a25cfca50f15104a4639453238a6.svg">
+</div>
+<p>Notice that this list <em>isn’t sorted</em>; all we need to do is “pivot” it
+around the given value. Otherwise, items are still in the same order
+as they were (7 came before 6 in the original list, so it still does —
+but both of them are greater than 5, so they appear in the second half).</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">ll</span> <span class="o">=</span> <span class="n">new</span> <span class="n">LinkedList</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+
+<span class="n">ll</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="o">//</span> <span class="n">now</span> <span class="nb">list</span> <span class="ow">is</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">7</span> <span class="mi">6</span> <span class="mi">9</span>
+</pre></div>
+</div>
+<p>If the given pivot value is in the list, it should appear in the second
+half (with other greater-than-or-equal-to values):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">ll</span> <span class="o">=</span> <span class="n">new</span> <span class="n">LinkedList</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+
+<span class="n">ll</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="o">//</span>  <span class="n">now</span> <span class="nb">list</span> <span class="ow">is</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">7</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">5</span> <span class="mi">9</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="circular-arrays">
+<h2>Circular Arrays</h2>
+<p>In this challenge, you will create a “circular array” — like a list ADT
+but the end wraps around to the beginning (which makes for some interesting
+problems).</p>
+<p>A circular array is defined by having a start and indexes (be sure to
+think about <strong>optimizing runtime</strong> for indexing, since we’ll do this so
+much more often than adding items to it):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">circ</span> <span class="o">=</span> <span class="n">new</span> <span class="n">CircularArray</span><span class="p">()</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'harry'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'hermione'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ginny'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ron'</span><span class="p">)</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">printArray</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">harry</span>
+<span class="o">//</span> <span class="n">hermione</span>
+<span class="o">//</span> <span class="n">ginny</span>
+<span class="o">//</span> <span class="n">ron</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">getByIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="o">//</span> <span class="n">ginny</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">getByIndex</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span> <span class="o">//</span> <span class="n">null</span>
+</pre></div>
+</div>
+<p>Because the last item circles back around to the first item,  you can rotate the
+list and shift the indexes. Positive numbers rotate the list start (defined as
+the index 0) to the right (or higher indexes):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">circ</span> <span class="o">=</span> <span class="n">new</span> <span class="n">CircularArray</span><span class="p">()</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'harry'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'hermione'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ginny'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ron'</span><span class="p">)</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">printArray</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">hermione</span>
+<span class="o">//</span> <span class="n">ginny</span>
+<span class="o">//</span> <span class="n">ron</span>
+<span class="o">//</span> <span class="n">harry</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">getByIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="o">//</span> <span class="n">ron</span>
+</pre></div>
+</div>
+<p>And negative numbers rotate the list start to the left (or lower indexes):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">circ</span> <span class="o">=</span> <span class="n">new</span> <span class="n">CircularArray</span><span class="p">()</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'harry'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'hermione'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ginny'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ron'</span><span class="p">)</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">printArray</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">ron</span>
+<span class="o">//</span> <span class="n">harry</span>
+<span class="o">//</span> <span class="n">hermione</span>
+<span class="o">//</span> <span class="n">ginny</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">getByIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="o">//</span> <span class="n">hermione</span>
+</pre></div>
+</div>
+<p>And you can also rotate more than once around the ring:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">circ</span> <span class="o">=</span> <span class="n">new</span> <span class="n">CircularArray</span><span class="p">()</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'harry'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'hermione'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ginny'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ron'</span><span class="p">)</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="o">-</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">getByIndex</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="o">//</span> <span class="n">harry</span>
+</pre></div>
+</div>
+<p>If you add a new item after rotating, it should go at the <strong>end of the
+list in its current rotation</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">circ</span> <span class="o">=</span> <span class="n">new</span> <span class="n">CircularArray</span><span class="p">()</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'harry'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'hermione'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ginny'</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'ron'</span><span class="p">)</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">circ</span><span class="o">.</span><span class="n">addItem</span><span class="p">(</span><span class="s1">'dobby'</span><span class="p">)</span>
+
+<span class="n">circ</span><span class="o">.</span><span class="n">printArray</span><span class="p">()</span>
+<span class="o">//</span> <span class="n">ginny</span>
+<span class="o">//</span> <span class="n">ron</span>
+<span class="o">//</span> <span class="n">harry</span>
+<span class="o">//</span> <span class="n">hermione</span>
+<span class="o">//</span> <span class="n">dobby</span>
+</pre></div>
+</div>
+<p>Want a hint about the data structure?</p>
+<div class="hover-reveal topic">
+<p class="topic-title"><strong>Data Structure</strong></p>
+<p>Think about the data structure you’d want to use to store the items.</p>
+<p>While it’s tempting to use something like a Linked List, the runtime to
+find an item by index in a linked list is <cite>O(n)</cite>.</p>
+<p>You can use a standard array to store the items, but you’ll need
+to think about how to keep track of the head and handle rotations.</p>
+</div>
+<div class="section" id="solution">
+<h3>Solution</h3>
+<p>See <a class="reference external" href="https://curric.springboard.com/software-engineering-career-track/default/exercises/dsa-arrays-linked-lists/solution/index.html">Our solution</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./Arrays_Linked Lists Exercises_files/jquery.js"></script>
+<script type="text/javascript" src="./Arrays_Linked Lists Exercises_files/underscore.js"></script>
+<script type="text/javascript" src="./Arrays_Linked Lists Exercises_files/doctools.js"></script>
+<script type="text/javascript" src="./Arrays_Linked Lists Exercises_files/language_data.js"></script> 
+
+</body></html>
